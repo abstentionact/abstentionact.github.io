@@ -75,6 +75,7 @@ html[data-theme="dark"] .section-label>span:first-child{color:#a7b89f;border-col
 body{font-family:var(--serif);font-optical-sizing:auto;font-size:18px}
 .site-header,.button,.text-link,.demo-tabs,.segmented,.filter-buttons,.domain-filter{font-family:var(--sans)}
 .hero-description{font-size:19px;line-height:1.65}
+.hero-description + .hero-description{margin-top:14px}
 .hero-tagline{font-size:27px;font-weight:500;line-height:1.35}
 .overview-copy{font-size:19px;line-height:1.65}.overview-copy .definition{font-size:23px}
 .benchmark-description{font-size:19px;line-height:1.65}.benchmark-metrics p{font-size:18px}
