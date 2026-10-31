@@ -81,3 +81,8 @@ body{font-family:var(--serif);font-optical-sizing:auto;font-size:18px}
 .task-section .section-intro>p,.task-title,.task-explanation{font-size:18px}
 .demo-outcome p{font-size:18px}.env-detail,.demo-bottom{font-size:14px}
 @media(max-width:640px){.hero-tagline{font-size:24px}.hero-description{font-size:18px}.overview-copy .definition{font-size:21px}}
+
+/* A quiet grid that disappears before the next section. */
+.hero{position:relative;isolation:isolate}
+.hero::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background-image:linear-gradient(to right,var(--line) 1px,transparent 1px),linear-gradient(to bottom,var(--line) 1px,transparent 1px);background-size:48px 48px;opacity:.5;-webkit-mask-image:radial-gradient(ellipse 75% 65% at 55% 28%,#000 5%,transparent 100%);mask-image:radial-gradient(ellipse 75% 65% at 55% 28%,#000 5%,transparent 100%)}
+@media(max-width:640px){.hero::before{background-size:36px 36px;opacity:.35}}
