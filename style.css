@@ -19,17 +19,8 @@
 .site-header .brand{font-size:24px;line-height:1.5}
 .header-actions{display:flex;align-items:center;gap:22px}
 .demo-shell .demo-top>span:first-child{font-size:12px;letter-spacing:.6px}
-.theme-toggle{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;padding:0;border:1px solid var(--line);border-radius:50%;background:transparent;color:var(--ink);flex-shrink:0}
-.theme-toggle[hidden]{display:none}.theme-toggle:hover{border-color:var(--orange);color:var(--orange)}
-.sun-icon{display:none}html[data-theme="dark"] .moon-icon{display:none}html[data-theme="dark"] .sun-icon{display:block}
-:root{color-scheme:light}html[data-theme="dark"]{color-scheme:dark;--paper:#111c18;--ink:#eef0e5;--soft:#b2beb4;--orange:#efa77c;--line:#34453a;--green:#1c3026}
-html[data-theme="dark"] .hero-description{color:var(--soft)}
-html[data-theme="dark"] .button.dark:hover{background:#d7ddce}
-html[data-theme="dark"] .citation pre{background:#1c2b23;color:var(--ink);border-color:var(--line)}
-html[data-theme="dark"] .citation-controls button{color:var(--soft)}
-html[data-theme="dark"] .citation-controls button.active{background:var(--ink);color:var(--paper)}
-html[data-theme="dark"] .section-label>span:first-child{color:#a7b89f;border-color:var(--line)}
-@media(max-width:640px){.site-header{gap:12px}.header-actions{gap:10px}.site-header .header-actions .nav-action{font-size:14px}.theme-toggle{width:36px;height:36px}}
+:root{color-scheme:light}
+@media(max-width:640px){.site-header{gap:12px}.header-actions{gap:10px}.site-header .header-actions .nav-action{font-size:14px}}
 .site-header .nav-action{display:flex}
 .site-header .brand-mark{width:28px;height:28px}
 .site-header nav[aria-label],.site-header .nav-action{font-size:16px;line-height:1.5}

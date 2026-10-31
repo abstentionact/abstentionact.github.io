@@ -279,19 +279,3 @@ async function copyText(text, button, originalLabel) {
   window.setTimeout(() => {button.textContent = originalLabel + ' ⧉';}, 2200);
 }
 document.getElementById('copy-citation').addEventListener('click', event => copyText(citations[citation], event.currentTarget, 'Copy BibTeX'));
-
-const themeToggle = document.getElementById('theme-toggle');
-function renderThemeToggle() {
-  const dark = document.documentElement.dataset.theme === 'dark';
-  themeToggle.setAttribute('aria-pressed', String(dark));
-  themeToggle.title = dark ? 'Switch to light mode' : 'Switch to dark mode';
-  document.querySelector('meta[name="theme-color"]').content = dark ? '#111c18' : '#ffffff';
-}
-renderThemeToggle();
-themeToggle.hidden = false;
-themeToggle.addEventListener('click', () => {
-  const theme = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
-  document.documentElement.dataset.theme = theme;
-  try { localStorage.setItem('abstentionact-theme', theme); } catch { /* Still works without storage. */ }
-  renderThemeToggle();
-});
