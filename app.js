@@ -285,7 +285,7 @@ function renderThemeToggle() {
   const dark = document.documentElement.dataset.theme === 'dark';
   themeToggle.setAttribute('aria-pressed', String(dark));
   themeToggle.title = dark ? 'Switch to light mode' : 'Switch to dark mode';
-  document.querySelector('meta[name="theme-color"]').content = dark ? '#111c18' : '#f5f4ee';
+  document.querySelector('meta[name="theme-color"]').content = dark ? '#111c18' : '#ffffff';
 }
 renderThemeToggle();
 themeToggle.hidden = false;

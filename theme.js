@@ -9,5 +9,5 @@
     // Storage can be unavailable in private or restricted browser contexts.
   }
   document.documentElement.dataset.theme = theme;
-  document.querySelector('meta[name="theme-color"]').content = theme === 'dark' ? '#111c18' : '#f5f4ee';
+  document.querySelector('meta[name="theme-color"]').content = theme === 'dark' ? '#111c18' : '#ffffff';
 })();
