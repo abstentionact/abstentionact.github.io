@@ -7,5 +7,5 @@
     // Keep the default when storage is unavailable.
   }
   document.documentElement.dataset.theme = theme;
-  document.querySelector('meta[name="theme-color"]').content = theme === 'dark' ? '#111c18' : '#ffffff';
+  document.querySelector('meta[name="theme-color"]').content = theme === 'dark' ? '#0e0e10' : '#f6f5f1';
 })();
